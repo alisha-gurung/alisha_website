@@ -1,0 +1,142 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+---
+
+<Layout title="Alisha Gurung - Personal Portfolio">
+    <Navigation />
+    
+    <!-- Hero Section -->
+    <div class="relative w-full">
+        <div class="relative flex min-h-[600px] lg:min-h-[720px] flex-col items-center justify-center overflow-hidden bg-cover bg-center px-4 py-20" style='background-image: linear-gradient(rgba(13, 18, 27, 0.4), rgba(13, 18, 27, 0.6)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBliRF6kplhaH7lazN3TttAAip5m5pkXqJQjt5uxTP1iMOuRKoOD7P6E08FlF0GcQLDo-UxKXv1NknPmUxXWIIaesILHxPGYh7yFYVv-e0QcJu0HhfqvW6lWf4YGMmrfzJKGEuVj7giR9eVsdAG0OzhyqoUhjJFsJ1DKoWxTBVJLOG800sHSTSfTXW2sxfDw_NLL6BuA8XM6a0A9OFmzXJJ1n2cc_NkdsmQwAyNQmHnz8J1GpoR1DIegZlKcb3xaDrBXjBMp0c_2EI");'>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background-light dark:to-background-dark opacity-90"></div>
+            <div class="relative z-10 flex max-w-[800px] flex-col items-center gap-6 text-center animate-fade-in-up">
+                <span class="inline-block rounded-full bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-white backdrop-blur-sm border border-white/20">
+                    Personal Portfolio
+                </span>
+                <h1 class="font-serif text-4xl font-medium leading-tight text-white md:text-6xl lg:text-7xl">
+                    Elevating the Art <br/>of <span class="italic text-gold">Excellence</span>
+                </h1>
+                <p class="max-w-[540px] text-lg font-light leading-relaxed text-gray-200 md:text-xl">
+                    Strategic leadership and operational excellence. Curating unforgettable experiences for everyone.
+                </p>
+                <div class="mt-4 flex gap-4">
+                    <a href={import.meta.env.BASE_URL + "/portfolio"} class="bg-white text-navy-deep hover:bg-gray-100 h-12 px-8 rounded-lg text-base font-bold transition-colors shadow-lg flex items-center justify-center">
+                        View Portfolio
+                    </a>
+                    <a href={import.meta.env.BASE_URL + "/contact"} class="bg-transparent border border-white/30 text-white hover:bg-white/10 h-12 px-8 rounded-lg text-base font-medium transition-colors backdrop-blur-sm flex items-center justify-center">
+                         Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div class="layout-container flex flex-col items-center w-full py-20 px-4 md:px-10 lg:px-20 bg-background-light dark:bg-background-dark" id="portfolio">
+        <div class="flex flex-col max-w-[1200px] w-full gap-12">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-[#e7ebf3] dark:border-gray-800 pb-6">
+                <div>
+                    <span class="text-gold font-bold text-sm tracking-wider uppercase mb-2 block">My Work</span>
+                    <h2 class="font-serif text-3xl md:text-4xl text-navy-deep dark:text-white">Featured Projects</h2>
+                </div>
+                <p class="text-slate-500 max-w-sm text-sm md:text-base mb-1">
+                    A selection of award-winning work transformed through strategic vision.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <ProjectCard 
+                    title="Project One"
+                    location="Kathmandu, Nepal"
+                    description="Led a complete operational restructuring resulting in success."
+                    image="https://lh3.googleusercontent.com/aida-public/AB6AXuBk588PQCYS5cJx6_IfBLOM6e7cKMVR7fUWY0UD3In9y6C2afTI73uhTRGGLYE-Zuk9EpICYfnFk6HAgyJhUwEvjj6P9HDVR4B7TXy0htJu7hyVhN-nKxa4edJMw5tbeEDSyV5PhCe3D8y1075aTsmZQ7_-DNoOpLN6skLTfZK4Kfx-j_x9lJPsH5SsqHbCtuv-gEI91yBSb4NNleGPzcN399V4-Vu0b2r92UHnFuIcmUTdS6HcxyM518HP-8zbN_Jtf7WENbryHBU"
+                    icon="star"
+                />
+                <ProjectCard 
+                    title="Project Two"
+                    location="Pokhara, Nepal"
+                    description="Oversaw the grand opening and implemented sustainable luxury practices."
+                    image="https://lh3.googleusercontent.com/aida-public/AB6AXuC_bvSdnLsCrZ0SeDsyQX4CC4YPdHZLlxKnatJt0zAVJGs5uw3i5Deoxx2EGjshTLoVFQd7WZjMmZaEgKcixuSFihH691BYLCjrcCPQVSIUILz9YfML8L2GDkVaF6ZgXDMiCIyg4p2HSvxYhx9IY2YPC82M5GBwmPfa7jK4BZyeI3P5ehmgcJDpsfDYVRN7MgbtahoWhqBtGZjmN-1HimH0S7Yzs0SWwkxG3_GQTMlHBUjeDXN76dRoQdOpJ5s965CYLast2hXBP4A"
+                    icon="water_lux"
+                />
+                <ProjectCard 
+                    title="Project Three"
+                    location="Butwal, Nepal"
+                    description="Increased efficiency by 25% through strategic partnerships."
+                    image="https://lh3.googleusercontent.com/aida-public/AB6AXuDwNmcTGlV9ClYMDLtG8xPm7PoA-KTGLssYBaDbXVXfIfviywiV8EUsbBsqAuxGU4-DcctfxmlxYD_HPWuTnueSiuLxQpU2ERztt98b7p-eMdnawUgfGoa_jQDQ5r1sbGxUiyS2QRd2y6lq1yjDMqscWie2GokR8_-Qx2PQOWftMXP_uREpD5jSfw-p7iG3CzJihcpYoEhsyu_EzNeYo6tK3WsyacatI39THZal5Ab7L3hQIXkb0x4-UKPltQX_j7_JwAcKU5H9BqQ"
+                    icon="apartment"
+                />
+            </div>
+        </div>
+    </div>
+
+    <!-- Expertise Section -->
+    <div class="w-full bg-white dark:bg-[#151c2b] py-24 px-4 border-y border-[#e7ebf3] dark:border-gray-800" id="expertise">
+        <div class="layout-container flex flex-col items-center max-w-[1200px] mx-auto">
+            <div class="flex flex-col lg:flex-row gap-16 w-full">
+                <div class="flex-1 flex flex-col justify-center">
+                    <h2 class="font-serif text-4xl md:text-5xl font-medium text-navy-deep dark:text-white mb-6 leading-tight">
+                        Personal <br/><span class="text-gold italic">Expertise</span>
+                    </h2>
+                    <p class="text-lg text-slate-600 dark:text-slate-300 mb-8 max-w-lg leading-relaxed">
+                        With passion and dedication, I bring a holistic approach that balances operational rigor with the nuanced art of satisfaction.
+                    </p>
+                    <div class="relative pl-6 border-l-2 border-gold py-2">
+                        <p class="text-xl italic font-serif text-navy-deep dark:text-white leading-relaxed">
+                            "Alisha redefined what excellence means. An absolute visionary in the field."
+                        </p>
+                        <div class="mt-4 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-slate-200 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAWsCDDMkbw40NBjdqxTyCyQ2-UkGLQMR_0Diy8IAxKkfHuFj4ywjvMVfCZwSQtoy9RfAIm076hbdBJHNyCzY3B-XBgxza2SjCwBqbkDrZ4qvr0t7ZH_JW160DRDQux5mun_M91CQMmosAd2JiWtw4ydgLEIxRpu2T0RQ7QP-8tl7jWuFpzAao0ZjcPHElIMWWYzw68CcWKnWDtA7A5VrZULYjk-Vf7ikCUKxis0sAt4dKeqNsW-5MDkNmHDX0t0PNquNuc-Kp6c_M");'></div>
+                            <div>
+                                <p class="text-sm font-bold text-navy-deep dark:text-white">Mentor Name</p>
+                                <p class="text-xs text-slate-500 uppercase">Title, Organization</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="p-6 rounded-xl border border-[#e7ebf3] dark:border-gray-700 bg-background-light dark:bg-[#0a1120] hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 rounded-lg bg-gold/10 flex items-center justify-center text-gold mb-4">
+                            <span class="material-symbols-outlined text-[28px]">trending_up</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-navy-deep dark:text-white mb-2">Operational Excellence</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                            Optimizing efficiency and performance without compromising standards.
+                        </p>
+                    </div>
+                    <div class="p-6 rounded-xl border border-[#e7ebf3] dark:border-gray-700 bg-background-light dark:bg-[#0a1120] hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 rounded-lg bg-gold/10 flex items-center justify-center text-gold mb-4">
+                            <span class="material-symbols-outlined text-[28px]">diamond</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-navy-deep dark:text-white mb-2">User Experience</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                            Curating bespoke and unforgettable moments for everyone.
+                        </p>
+                    </div>
+                    <div class="p-6 rounded-xl border border-[#e7ebf3] dark:border-gray-700 bg-background-light dark:bg-[#0a1120] hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 rounded-lg bg-gold/10 flex items-center justify-center text-gold mb-4">
+                            <span class="material-symbols-outlined text-[28px]">public</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-navy-deep dark:text-white mb-2">Strategic Planning</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                            Developing visionary growth strategies.
+                        </p>
+                    </div>
+                    <div class="p-6 rounded-xl border border-[#e7ebf3] dark:border-gray-700 bg-background-light dark:bg-[#0a1120] hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 rounded-lg bg-gold/10 flex items-center justify-center text-gold mb-4">
+                            <span class="material-symbols-outlined text-[28px]">groups</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-navy-deep dark:text-white mb-2">Leadership</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                            Cultivating high-performance cultures and nurturing talent.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <Footer />
+</Layout>

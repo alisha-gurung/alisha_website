@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Managed Properties Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Noto+Sans:wght@300..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f4c025",
+                        "primary-dark": "#b38b1d",
+                        "navy-dark": "#0F172A",
+                        "navy-light": "#1E293B",
+                        "background-light": "#f8f8f5",
+                        "background-dark": "#0B1120", 
+                        "border-gold": "#f4c025",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased transition-colors duration-300">
+<div class="flex min-h-screen flex-col">
+<!-- Top Navigation -->
+<header class="w-full border-b border-navy-light/20 dark:border-primary/20 bg-white dark:bg-navy-dark sticky top-0 z-50">
+<div class="px-6 md:px-10 lg:px-40 py-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">diamond</span>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold tracking-tight uppercase">John Doe <span class="text-primary font-light">| Portfolio</span></h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors" href="#">Home</a>
+<a class="text-primary font-bold text-sm leading-normal border-b-2 border-primary" href="#">Portfolio</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors" href="#">Contact</a>
+</nav>
+<button class="hidden md:flex bg-primary hover:bg-primary-dark text-navy-dark text-sm font-bold py-2 px-6 rounded-lg transition-colors items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+<span>Contact Me</span>
+</button>
+<button class="md:hidden text-slate-900 dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow flex flex-col items-center px-4 md:px-10 lg:px-40 py-10 w-full">
+<div class="w-full max-w-7xl flex flex-col gap-10">
+<!-- Page Heading -->
+<div class="flex flex-col gap-4 border-l-4 border-primary pl-6">
+<h1 class="text-slate-900 dark:text-white text-4xl md:text-5xl font-light tracking-tight">Managed Properties</h1>
+<p class="text-slate-600 dark:text-[#cbbc90] text-lg max-w-2xl font-light">
+                        A curated collection of luxury hotels and resorts managed with precision and excellence over the last decade. Showcasing leadership in operations, guest experience, and revenue growth.
+                    </p>
+</div>
+<!-- Filters -->
+<div class="flex flex-wrap items-center justify-between gap-4 py-4 border-y border-navy-light/10 dark:border-primary/10">
+<div class="flex flex-wrap gap-3">
+<button class="group flex h-9 items-center gap-2 rounded-full border border-slate-300 dark:border-navy-light bg-white dark:bg-navy-light px-4 hover:border-primary hover:text-primary dark:hover:border-primary dark:hover:text-primary transition-all">
+<span class="text-slate-700 dark:text-slate-200 text-sm font-medium group-hover:text-primary">All Years</span>
+<span class="material-symbols-outlined text-slate-400 dark:text-slate-400 group-hover:text-primary text-[18px]">expand_more</span>
+</button>
+<button class="group flex h-9 items-center gap-2 rounded-full border border-slate-300 dark:border-navy-light bg-white dark:bg-navy-light px-4 hover:border-primary hover:text-primary dark:hover:border-primary dark:hover:text-primary transition-all">
+<span class="text-slate-700 dark:text-slate-200 text-sm font-medium group-hover:text-primary">Location</span>
+<span class="material-symbols-outlined text-slate-400 dark:text-slate-400 group-hover:text-primary text-[18px]">expand_more</span>
+</button>
+<button class="group flex h-9 items-center gap-2 rounded-full border border-slate-300 dark:border-navy-light bg-white dark:bg-navy-light px-4 hover:border-primary hover:text-primary dark:hover:border-primary dark:hover:text-primary transition-all">
+<span class="text-slate-700 dark:text-slate-200 text-sm font-medium group-hover:text-primary">Rating</span>
+<span class="material-symbols-outlined text-slate-400 dark:text-slate-400 group-hover:text-primary text-[18px]">expand_more</span>
+</button>
+</div>
+<div class="text-slate-500 dark:text-slate-400 text-sm font-light">Showing 3 of 12 Properties</div>
+</div>
+<!-- Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<article class="group relative flex flex-col bg-white dark:bg-navy-light rounded-lg overflow-hidden border border-slate-200 dark:border-navy-dark shadow-md hover:shadow-xl hover:border-primary/50 dark:hover:border-primary transition-all duration-300">
+<div class="relative h-64 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Modern luxury hotel lobby with warm lighting" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAtOWuoyOdCzTQbDlZn0Wf7iLEodhq24URTxIf0MQDDa-h1wd-5rIhKseBvotpXCSv32Gal66XcAvK58O4mMIqs1Qq-PQyfmAcUFp75DqCru0WH9h9w9M-4ZL4jQpWpAcYX2BAVUxnvSa7JUtz0kpQSVCXuqwufcmCPA4rJuSf7hAImSMFQq3scYQJ1AXBuRgrph0E2xCGUZgnFKNhTx199fafBW7yCcEVel5pFHOlkz1NuFrBLlFjLpOenj54iBn7D42wjiuo-Vrg");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-4 left-4 flex items-center gap-3">
+<div class="bg-white p-1.5 rounded-full shadow-lg">
+<span class="material-symbols-outlined text-navy-dark text-[24px]">apartment</span>
+</div>
+<div>
+<h3 class="text-white text-xl font-bold leading-tight">Mulberry Hotel</h3>
+<span class="text-primary text-xs font-bold uppercase tracking-wider">New York, NY</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col flex-grow p-6">
+<div class="mb-4">
+<p class="text-primary text-xs font-bold uppercase tracking-widest mb-1">Role</p>
+<p class="text-slate-900 dark:text-white text-lg font-medium">General Manager</p>
+</div>
+<div class="space-y-3 mt-auto">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">check_circle</span>
+<p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">Oversaw comprehensive $2M renovation project within budget.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">trending_up</span>
+<p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">Increased occupancy rates by 15% year-over-year.</p>
+</div>
+</div>
+</div>
+<div class="h-1 w-0 bg-primary group-hover:w-full transition-all duration-500 ease-out"></div>
+</article>
+<!-- Card 2 -->
+<article class="group relative flex flex-col bg-white dark:bg-navy-light rounded-lg overflow-hidden border border-slate-200 dark:border-navy-dark shadow-md hover:shadow-xl hover:border-primary/50 dark:hover:border-primary transition-all duration-300">
+<div class="relative h-64 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Tropical resort pool side with palm trees" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC3AbpKtonpFmrLa2ndEvLOgznPucDsZ0wzsEe4Z6KCuea1SQwhJK5xkt-bwuwJ6Ud3f2EixnnN-ZYsCYnp6e_mdGY1VJy9qzx_QtvBr1uO5JvKFSwIosQteg90u4WLrsvtcIfRs_jty-zblBbhILkjgJmYylk9iZYd5j5Ni97aVpLfh11giFxzOZQUpgKVdbPEv9wRiq1_Rc6EIqPa3a7PAzZJrkAzPsNvoem7H1_hjBduxUl8lMNqSgc_cjR5nUOhv9YA3GIqp5I");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-4 left-4 flex items-center gap-3">
+<div class="bg-white p-1.5 rounded-full shadow-lg">
+<span class="material-symbols-outlined text-navy-dark text-[24px]">beach_access</span>
+</div>
+<div>
+<h3 class="text-white text-xl font-bold leading-tight">Meraki Resort</h3>
+<span class="text-primary text-xs font-bold uppercase tracking-wider">Maldives</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col flex-grow p-6">
+<div class="mb-4">
+<p class="text-primary text-xs font-bold uppercase tracking-widest mb-1">Role</p>
+<p class="text-slate-900 dark:text-white text-lg font-medium">Operations Director</p>
+</div>
+<div class="space-y-3 mt-auto">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">groups</span>
+<p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">Led a diverse team of 40 staff members across 3 departments.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">star</span>
+<p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">Maintained a consistent 4.8 star guest satisfaction rating.</p>
+</div>
+</div>
+</div>
+<div class="h-1 w-0 bg-primary group-hover:w-full transition-all duration-500 ease-out"></div>
+</article>
+<!-- Card 3 -->
+<article class="group relative flex flex-col bg-white dark:bg-navy-light rounded-lg overflow-hidden border border-slate-200 dark:border-navy-dark shadow-md hover:shadow-xl hover:border-primary/50 dark:hover:border-primary transition-all duration-300">
+<div class="relative h-64 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Classic hotel exterior architecture facade" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB1RawOZNhXDAEHFk5wz_K6EfTF-zWZVgg5_hCTeg3OhoktCGZmn9w2QAz7t0BP5nWIJtJKrH3CtGjx1ysJ4fmSxYBn8i_BFk8AKwFcCOLesEsMfwnx23UudUE3aP5B97qFMV0OrLMjAGdQmkrW2jT1P9RU88qZSgiozKw0zvOvqeXltqzCu2ANYtLUFTUg2ZnUhRstIKM8MM7tYr9NUO4-5e2Lh0ZwIPtH05M_b8pGhiPFeQxVP6Z8s11OCGtIXGDcPgiYPovbh9Q");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-4 left-4 flex items-center gap-3">
+<div class="bg-white p-1.5 rounded-full shadow-lg">
+<span class="material-symbols-outlined text-navy-dark text-[24px]">hotel</span>
+</div>
+<div>
+<h3 class="text-white text-xl font-bold leading-tight">Lorne Hotel</h3>
+<span class="text-primary text-xs font-bold uppercase tracking-wider">Victoria, AU</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col flex-grow p-6">
+<div class="mb-4">
+<p class="text-primary text-xs font-bold uppercase tracking-widest mb-1">Role</p>
+<p class="text-slate-900 dark:text-white text-lg font-medium">Team Leader</p>
+</div>
+<div class="space-y-3 mt-auto">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">settings_suggest</span>
+<p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">Implemented new guest CI/CD workflows for efficiency.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">emoji_events</span>
+<p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">Awarded Employee of the Year for outstanding service.</p>
+</div>
+</div>
+</div>
+<div class="h-1 w-0 bg-primary group-hover:w-full transition-all duration-500 ease-out"></div>
+</article>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-navy-dark border-t border-navy-light/20 dark:border-primary/20 mt-10">
+<div class="px-6 md:px-10 lg:px-40 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex flex-col gap-2 text-center md:text-left">
+<div class="flex items-center gap-2 justify-center md:justify-start">
+<span class="material-symbols-outlined text-primary text-2xl">diamond</span>
+<h2 class="text-slate-900 dark:text-white text-base font-bold tracking-tight uppercase">John Doe</h2>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm">© 2024 John Doe Hospitality Management.</p>
+</div>
+<div class="flex items-center gap-6">
+<a class="text-slate-500 dark:text-[#cbbc90] hover:text-primary dark:hover:text-primary transition-colors text-sm" href="#">Privacy Policy</a>
+<a class="text-slate-500 dark:text-[#cbbc90] hover:text-primary dark:hover:text-primary transition-colors text-sm" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="w-10 h-10 rounded-full bg-slate-100 dark:bg-navy-light flex items-center justify-center text-slate-600 dark:text-[#cbbc90] hover:bg-primary hover:text-navy-dark transition-all" href="#">
+<i class="material-symbols-outlined text-[20px]">public</i> <!-- Using public icon as generic web/social placeholder -->
+</a>
+<a class="w-10 h-10 rounded-full bg-slate-100 dark:bg-navy-light flex items-center justify-center text-slate-600 dark:text-[#cbbc90] hover:bg-primary hover:text-navy-dark transition-all" href="#">
+<i class="material-symbols-outlined text-[20px]">mail</i>
+</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Alex Mercer - Resume &amp; Contact</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f2d00d",
+                        "background-light": "#f8f8f5",
+                        "background-dark": "#221f10",
+                        "navy": "#0f172a", // Adding navy for the requested theme
+                        "navy-light": "#1e293b",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "body": ["Manrope", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom Scrollbar for cleaner look */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background-color: #e2e8f0;
+            border-radius: 20px;
+        }
+        .dark .custom-scrollbar::-webkit-scrollbar-thumb {
+            background-color: #334155;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-navy dark:text-gray-100 font-display transition-colors duration-200">
+<div class="relative flex min-h-screen w-full flex-col lg:flex-row overflow-hidden">
+<!-- Left Column: Sticky Sidebar / Identity Card -->
+<!-- On mobile, this scrolls naturally. On desktop, it is sticky/fixed height. -->
+<aside class="w-full lg:w-[400px] xl:w-[450px] bg-background-light dark:bg-background-dark border-b lg:border-b-0 lg:border-r border-[#e2e8f0] dark:border-white/10 shrink-0 relative lg:h-screen lg:overflow-y-auto custom-scrollbar z-10">
+<div class="p-8 lg:p-12 flex flex-col h-full gap-8">
+<!-- Profile Header -->
+<div class="flex flex-col items-center text-center space-y-6">
+<div class="relative group">
+<div class="size-48 rounded-full overflow-hidden border-4 border-white dark:border-navy shadow-xl">
+<img alt="Professional headshot of a man in a suit" class="w-full h-full object-cover" data-alt="Professional headshot of a man in a suit" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAk6YuiE3I7QZHuUurlO6PMrwLdwQqI1stFJDQNcZXR7VsmdhQAhnNZnPCM1QaSnoEQSAYXFt1W-LzxAXjdui4UEmxOcpKsqdV7XTbIUVl0AEeGEsv35CTheS0h9oND_jWt-4WLwyAhnrhswnej-ZHOJoCdifko8jo0oSssHKT4VGt3dxjXa41ryPF-q9-MXrT4z5w3f74yamlRIgPdJPpGwZKCPfD2oOcry9u6yHThmNu7onsykmO4iSShAcWZBaph3OoHXdcNJBM"/>
+</div>
+<div class="absolute bottom-2 right-2 bg-primary text-navy p-2 rounded-full shadow-lg">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+</div>
+<div>
+<h1 class="text-3xl font-extrabold text-navy dark:text-white tracking-tight mb-2">Alex Mercer</h1>
+<p class="text-navy-light/80 dark:text-gray-400 font-medium text-lg leading-snug">General Manager<br/><span class="text-primary font-bold">Luxury Hospitality</span></p>
+</div>
+</div>
+<!-- Contact Info List -->
+<div class="flex flex-col gap-3 w-full">
+<!-- Email -->
+<a class="group flex items-center gap-4 p-3 rounded-xl hover:bg-white dark:hover:bg-white/5 transition-all border border-transparent hover:border-gray-200 dark:hover:border-white/10" href="mailto:alex.mercer@hotel.com">
+<div class="flex items-center justify-center size-10 rounded-lg bg-primary/20 text-navy-light dark:text-primary group-hover:bg-primary group-hover:text-navy transition-colors shrink-0">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div class="flex flex-col overflow-hidden">
+<span class="text-xs font-bold text-gray-500 uppercase tracking-wider">Email</span>
+<span class="text-sm font-medium truncate text-navy dark:text-gray-200">alex.mercer@hotel.com</span>
+</div>
+</a>
+<!-- LinkedIn -->
+<a class="group flex items-center gap-4 p-3 rounded-xl hover:bg-white dark:hover:bg-white/5 transition-all border border-transparent hover:border-gray-200 dark:hover:border-white/10" href="#">
+<div class="flex items-center justify-center size-10 rounded-lg bg-primary/20 text-navy-light dark:text-primary group-hover:bg-primary group-hover:text-navy transition-colors shrink-0">
+<span class="material-symbols-outlined">work</span> <!-- using work as generic for linkedin/profile -->
+</div>
+<div class="flex flex-col overflow-hidden">
+<span class="text-xs font-bold text-gray-500 uppercase tracking-wider">LinkedIn</span>
+<span class="text-sm font-medium truncate text-navy dark:text-gray-200">/in/alexmercer</span>
+</div>
+</a>
+<!-- Location -->
+<div class="flex items-center gap-4 p-3 rounded-xl border border-transparent">
+<div class="flex items-center justify-center size-10 rounded-lg bg-primary/20 text-navy-light dark:text-primary shrink-0">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div class="flex flex-col overflow-hidden">
+<span class="text-xs font-bold text-gray-500 uppercase tracking-wider">Location</span>
+<span class="text-sm font-medium truncate text-navy dark:text-gray-200">New York, NY</span>
+</div>
+</div>
+</div>
+<!-- Spacer -->
+<div class="flex-grow hidden lg:block"></div>
+<!-- CTA -->
+<button class="w-full flex items-center justify-center gap-2 bg-primary hover:bg-[#d9ba0b] text-navy font-bold py-4 px-6 rounded-xl transition-transform hover:scale-[1.02] shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined">download</span>
+<span>Download Full CV (PDF)</span>
+</button>
+</div>
+</aside>
+<!-- Right Column: Scrollable Content -->
+<main class="flex-1 h-auto lg:h-screen overflow-y-auto custom-scrollbar bg-white dark:bg-[#1a180e]">
+<div class="max-w-4xl mx-auto p-6 md:p-12 lg:p-16 flex flex-col gap-16">
+<!-- About / Summary Section -->
+<section>
+<h2 class="text-2xl font-bold text-navy dark:text-white mb-6 flex items-center gap-3">
+<span class="w-8 h-1 bg-primary rounded-full"></span>
+                        Executive Summary
+                    </h2>
+<p class="text-navy-light/80 dark:text-gray-300 leading-relaxed text-lg">
+                        Award-winning General Manager with over 15 years of experience in the luxury hospitality sector. Proven track record of optimizing operations, enhancing guest satisfaction scores by 40%+, and driving multi-million dollar revenue growth. Expert in building high-performing teams and delivering 5-star experiences in fast-paced urban environments.
+                    </p>
+</section>
+<!-- Experience Timeline -->
+<section>
+<h2 class="text-2xl font-bold text-navy dark:text-white mb-8 flex items-center gap-3">
+<span class="w-8 h-1 bg-primary rounded-full"></span>
+                        Professional Experience
+                    </h2>
+<div class="relative border-l-2 border-gray-200 dark:border-gray-800 ml-3 space-y-12">
+<!-- Job 1 -->
+<div class="relative pl-8 md:pl-12">
+<!-- Dot -->
+<div class="absolute -left-[9px] top-1 size-4 bg-white dark:bg-[#1a180e] border-[3px] border-primary rounded-full"></div>
+<div class="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-2">
+<div>
+<h3 class="text-xl font-bold text-navy dark:text-white">General Manager</h3>
+<p class="text-primary font-bold">The Grand Hotel &amp; Towers</p>
+</div>
+<span class="inline-block px-3 py-1 bg-navy/5 dark:bg-white/10 rounded-full text-xs font-bold text-navy-light dark:text-gray-300 mt-2 sm:mt-0">2019 - Present</span>
+</div>
+<p class="text-sm text-gray-500 dark:text-gray-400 mb-4 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span> New York, NY
+                            </p>
+<ul class="list-disc list-outside ml-4 space-y-2 text-navy-light/80 dark:text-gray-300">
+<li>Oversee daily operations for a 400-room luxury property with 250+ staff members.</li>
+<li>Increased annual RevPAR by 18% through strategic pricing and partner collaborations.</li>
+<li>Led the "Green Stay" initiative, reducing operational waste by 25% within two years.</li>
+<li>Maintained a consistent 9.8/10 guest satisfaction rating on major travel platforms.</li>
+</ul>
+</div>
+<!-- Job 2 -->
+<div class="relative pl-8 md:pl-12">
+<div class="absolute -left-[9px] top-1 size-4 bg-white dark:bg-[#1a180e] border-[3px] border-primary rounded-full"></div>
+<div class="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-2">
+<div>
+<h3 class="text-xl font-bold text-navy dark:text-white">Director of Operations</h3>
+<p class="text-primary font-bold">Seaside Resort &amp; Spa</p>
+</div>
+<span class="inline-block px-3 py-1 bg-navy/5 dark:bg-white/10 rounded-full text-xs font-bold text-navy-light dark:text-gray-300 mt-2 sm:mt-0">2015 - 2019</span>
+</div>
+<p class="text-sm text-gray-500 dark:text-gray-400 mb-4 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span> Miami, FL
+                            </p>
+<ul class="list-disc list-outside ml-4 space-y-2 text-navy-light/80 dark:text-gray-300">
+<li>Managed Front Office, Housekeeping, and F&amp;B departments, ensuring seamless coordination.</li>
+<li>Spearheaded a $5M renovation project for the spa and wellness center, completed under budget.</li>
+<li>Implemented new CRM software that improved guest retention rates by 15%.</li>
+</ul>
+</div>
+<!-- Job 3 -->
+<div class="relative pl-8 md:pl-12">
+<div class="absolute -left-[9px] top-1 size-4 bg-white dark:bg-[#1a180e] border-[3px] border-gray-300 dark:border-gray-600 rounded-full"></div>
+<div class="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-2">
+<div>
+<h3 class="text-xl font-bold text-navy dark:text-white">Front Office Manager</h3>
+<p class="text-primary font-bold">Metropolitan Suites</p>
+</div>
+<span class="inline-block px-3 py-1 bg-navy/5 dark:bg-white/10 rounded-full text-xs font-bold text-navy-light dark:text-gray-300 mt-2 sm:mt-0">2012 - 2015</span>
+</div>
+<p class="text-sm text-gray-500 dark:text-gray-400 mb-4 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span> Chicago, IL
+                            </p>
+<p class="text-navy-light/80 dark:text-gray-300">
+                                Started as a concierge and rapidly promoted to Front Office Manager. Revamped training manuals for guest service agents.
+                            </p>
+</div>
+</div>
+</section>
+<!-- Education & Skills Split -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Education -->
+<section>
+<h2 class="text-2xl font-bold text-navy dark:text-white mb-6 flex items-center gap-3">
+<span class="w-8 h-1 bg-primary rounded-full"></span>
+                            Education
+                        </h2>
+<div class="space-y-6">
+<div class="bg-background-light dark:bg-white/5 p-5 rounded-xl border border-gray-100 dark:border-white/5">
+<h3 class="font-bold text-lg text-navy dark:text-white">MBA, Hospitality Management</h3>
+<p class="text-navy-light dark:text-gray-400">Cornell University</p>
+<p class="text-sm text-gray-500 mt-1">2010 - 2012</p>
+</div>
+<div class="bg-background-light dark:bg-white/5 p-5 rounded-xl border border-gray-100 dark:border-white/5">
+<h3 class="font-bold text-lg text-navy dark:text-white">BS, Business Administration</h3>
+<p class="text-navy-light dark:text-gray-400">New York University</p>
+<p class="text-sm text-gray-500 mt-1">2006 - 2010</p>
+</div>
+</div>
+</section>
+<!-- Skills -->
+<section>
+<h2 class="text-2xl font-bold text-navy dark:text-white mb-6 flex items-center gap-3">
+<span class="w-8 h-1 bg-primary rounded-full"></span>
+                            Core Competencies
+                        </h2>
+<div class="flex flex-wrap gap-2">
+<span class="px-4 py-2 rounded-lg bg-navy text-white text-sm font-medium">Revenue Management</span>
+<span class="px-4 py-2 rounded-lg bg-background-light dark:bg-white/10 text-navy dark:text-gray-200 border border-gray-200 dark:border-transparent text-sm font-medium">Guest Relations</span>
+<span class="px-4 py-2 rounded-lg bg-background-light dark:bg-white/10 text-navy dark:text-gray-200 border border-gray-200 dark:border-transparent text-sm font-medium">Strategic Budgeting</span>
+<span class="px-4 py-2 rounded-lg bg-background-light dark:bg-white/10 text-navy dark:text-gray-200 border border-gray-200 dark:border-transparent text-sm font-medium">Staff Leadership</span>
+<span class="px-4 py-2 rounded-lg bg-background-light dark:bg-white/10 text-navy dark:text-gray-200 border border-gray-200 dark:border-transparent text-sm font-medium">Event Planning</span>
+<span class="px-4 py-2 rounded-lg bg-background-light dark:bg-white/10 text-navy dark:text-gray-200 border border-gray-200 dark:border-transparent text-sm font-medium">CRM Systems</span>
+<span class="px-4 py-2 rounded-lg bg-background-light dark:bg-white/10 text-navy dark:text-gray-200 border border-gray-200 dark:border-transparent text-sm font-medium">Luxury Branding</span>
+</div>
+</section>
+</div>
+<!-- Footer / Contact Form -->
+<section class="mt-8 pt-12 border-t border-gray-200 dark:border-gray-800">
+<div class="bg-navy dark:bg-[#0c1220] rounded-2xl p-8 md:p-10 text-white shadow-2xl overflow-hidden relative">
+<!-- Decorative background element -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -mr-16 -mt-16 pointer-events-none"></div>
+<div class="relative z-10 grid md:grid-cols-2 gap-10">
+<div>
+<h2 class="text-3xl font-bold mb-4">Let's Connect</h2>
+<p class="text-gray-300 mb-8 leading-relaxed">
+                                    Interested in discussing new opportunities or collaborations? Fill out the form and I'll get back to you within 24 hours.
+                                </p>
+<div class="flex gap-4">
+<a class="size-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-navy transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">link</span>
+</a>
+<a class="size-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-navy transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</a>
+</div>
+</div>
+<form class="space-y-4" onsubmit="event.preventDefault();">
+<div>
+<label class="sr-only" for="name">Name</label>
+<input class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" id="name" placeholder="Your Name" type="text"/>
+</div>
+<div>
+<label class="sr-only" for="email">Email</label>
+<input class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" id="email" placeholder="Your Email" type="email"/>
+</div>
+<div>
+<label class="sr-only" for="message">Message</label>
+<textarea class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none" id="message" placeholder="How can I help you?" rows="3"></textarea>
+</div>
+<button class="w-full bg-primary hover:bg-[#d9ba0b] text-navy font-bold py-3 rounded-lg transition-colors flex justify-center items-center gap-2" type="submit">
+<span>Send Message</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</form>
+</div>
+</div>
+</section>
+<!-- Bottom spacing for scroll feel -->
+<div class="h-8"></div>
+</div>
+</main>
+</div>
+</body></html>

@@ -1,0 +1,29 @@
+---
+---
+<div class="w-full bg-white/90 backdrop-blur-md border-b border-[#e7ebf3] dark:border-gray-800 sticky top-0 z-50">
+    <div class="layout-container flex justify-center">
+        <div class="flex w-full max-w-[1200px] items-center justify-between px-6 py-4 lg:px-10">
+            <a class="flex items-center gap-3 text-navy-deep dark:text-white group" href={import.meta.env.BASE_URL}>
+                <div class="size-8 flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined text-[32px]">diamond</span>
+                </div>
+                <h2 class="font-serif text-xl font-bold tracking-tight text-navy-deep dark:text-white">ALISHA GURUNG</h2>
+            </a>
+            <div class="hidden md:flex items-center gap-8">
+                <nav class="flex gap-8">
+                    <a class="text-sm font-medium text-navy-text/80 hover:text-primary transition-colors" href={import.meta.env.BASE_URL + "/#about"}>About</a>
+                    <a class="text-sm font-medium text-navy-text/80 hover:text-primary transition-colors" href={import.meta.env.BASE_URL + "/portfolio"}>Portfolio</a>
+                    <a class="text-sm font-medium text-navy-text/80 hover:text-primary transition-colors" href={import.meta.env.BASE_URL + "/leadership"}>Expertise</a>
+                </nav>
+                <a href={import.meta.env.BASE_URL + "/contact"} class="bg-primary hover:bg-primary/90 text-white text-sm font-bold px-5 py-2.5 rounded-lg transition-all shadow-sm flex items-center gap-2">
+                    <span>Contact</span>
+                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-navy-deep">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </div>
+</div>

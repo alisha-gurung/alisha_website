@@ -1,0 +1,32 @@
+---
+interface Props {
+	title: string;
+	location: string;
+	image: string;
+	description: string;
+    icon?: string;
+}
+
+const { title, location, image, description, icon = "star" } = Astro.props;
+---
+
+<div class="group flex flex-col gap-4 cursor-pointer">
+    <div class="relative w-full aspect-[4/3] overflow-hidden rounded-lg shadow-sm">
+        <div class="absolute inset-0 bg-navy-deep/0 group-hover:bg-navy-deep/10 transition-colors z-10"></div>
+        <div class="w-full h-full bg-cover bg-center transform group-hover:scale-105 transition-transform duration-700 ease-out" 
+             style={`background-image: url('${image}');`}>
+        </div>
+    </div>
+    <div class="flex flex-col px-1">
+        <div class="flex justify-between items-start">
+            <div>
+                <h3 class="font-serif text-xl text-navy-deep dark:text-white group-hover:text-primary transition-colors">{title}</h3>
+                <span class="text-sm text-slate-500 uppercase tracking-wide">{location}</span>
+            </div>
+            <span class="material-symbols-outlined text-gold">{icon}</span>
+        </div>
+        <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 line-clamp-2">
+            {description}
+        </p>
+    </div>
+</div>

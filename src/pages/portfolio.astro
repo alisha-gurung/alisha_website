@@ -1,0 +1,59 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+---
+
+<Layout title="Managed Properties - Alisha Gurung">
+    <Navigation />
+    
+    <main class="flex-grow flex flex-col items-center px-4 md:px-10 lg:px-40 py-10 w-full">
+        <div class="w-full max-w-7xl flex flex-col gap-10">
+            <!-- Page Heading -->
+            <div class="flex flex-col gap-4 border-l-4 border-primary pl-6">
+                <h1 class="text-slate-900 dark:text-white text-4xl md:text-5xl font-light tracking-tight">Managed Properties</h1>
+                <p class="text-slate-600 dark:text-[#cbbc90] text-lg max-w-2xl font-light">
+                    A curated collection of luxury hotels and resorts managed with precision and excellence over the last decade. Showcasing leadership in operations, guest experience, and revenue growth.
+                </p>
+            </div>
+            
+            <!-- Filters -->
+            <div class="flex flex-wrap items-center justify-between gap-4 py-4 border-y border-navy-light/10 dark:border-primary/10">
+                <div class="flex flex-wrap gap-3">
+                    <button class="bg-white px-4 py-2 rounded-full border text-sm font-medium hover:text-primary transition-colors">All Years</button>
+                    <button class="bg-white px-4 py-2 rounded-full border text-sm font-medium hover:text-primary transition-colors">Location</button>
+                    <button class="bg-white px-4 py-2 rounded-full border text-sm font-medium hover:text-primary transition-colors">Rating</button>
+                </div>
+                <div class="text-slate-500 text-sm">Showing 3 of 12 Properties</div>
+            </div>
+
+            <!-- Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <ProjectCard 
+                    title="Mulberry Hotel"
+                    location="New York, NY"
+                    description="Oversaw comprehensive $2M renovation project within budget. Increased occupancy rates by 15% year-over-year."
+                    image="https://lh3.googleusercontent.com/aida-public/AB6AXuAtOWuoyOdCzTQbDlZn0Wf7iLEodhq24URTxIf0MQDDa-h1wd-5rIhKseBvotpXCSv32Gal66XcAvK58O4mMIqs1Qq-PQyfmAcUFp75DqCru0WH9h9w9M-4ZL4jQpWpAcYX2BAVUxnvSa7JUtz0kpQSVCXuqwufcmCPA4rJuSf7hAImSMFQq3scYQJ1AXBuRgrph0E2xCGUZgnFKNhTx199fafBW7yCcEVel5pFHOlkz1NuFrBLlFjLpOenj54iBn7D42wjiuo-Vrg"
+                    icon="apartment"
+                />
+                <ProjectCard 
+                    title="Meraki Resort"
+                    location="Maldives"
+                    description="Led a diverse team of 40 staff members. Maintained a consistent 4.8 star guest satisfaction rating."
+                    image="https://lh3.googleusercontent.com/aida-public/AB6AXuC3AbpKtonpFmrLa2ndEvLOgznPucDsZ0wzsEe4Z6KCuea1SQwhJK5xkt-bwuwJ6Ud3f2EixnnN-ZYsCYnp6e_mdGY1VJy9qzx_QtvBr1uO5JvKFSwIosQteg90u4WLrsvtcIfRs_jty-zblBbhILkjgJmYylk9iZYd5j5Ni97aVpLfh11giFxzOZQUpgKVdbPEv9wRiq1_Rc6EIqPa3a7PAzZJrkAzPsNvoem7H1_hjBduxUl8lMNqSgc_cjR5nUOhv9YA3GIqp5I"
+                    icon="beach_access"
+                />
+                <ProjectCard 
+                    title="Lorne Hotel"
+                    location="Victoria, AU"
+                    description="Implemented new guest CI/CD workflows for efficiency. Awarded Employee of the Year for outstanding service."
+                    image="https://lh3.googleusercontent.com/aida-public/AB6AXuB1RawOZNhXDAEHFk5wz_K6EfTF-zWZVgg5_hCTeg3OhoktCGZmn9w2QAz7t0BP5nWIJtJKrH3CtGjx1ysJ4fmSxYBn8i_BFk8AKwFcCOLesEsMfwnx23UudUE3aP5B97qFMV0OrLMjAGdQmkrW2jT1P9RU88qZSgiozKw0zvOvqeXltqzCu2ANYtLUFTUg2ZnUhRstIKM8MM7tYr9NUO4-5e2Lh0ZwIPtH05M_b8pGhiPFeQxVP6Z8s11OCGtIXGDcPgiYPovbh9Q"
+                    icon="hotel"
+                />
+            </div>
+        </div>
+    </main>
+
+    <Footer />
+</Layout>

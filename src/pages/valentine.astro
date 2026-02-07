@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ValentinesInvite from '../components/ValentinesInvite';
+---
+
+<Layout title="Services | Alisha Gurung">
+    <main class="flex items-center justify-center min-h-screen bg-gray-50 dark:bg-slate-900 p-4">
+        <div class="w-full max-w-4xl">
+             <div class="text-center mb-12">
+                <h1 class="text-4xl font-serif font-bold mb-4">Our Services</h1>
+                <p class="text-lg text-gray-600 dark:text-gray-300">Explore what we can do for you.</p>
+            </div>
+            
+            <div class="flex justify-center">
+                <ValentinesInvite client:load />
+            </div>
+        </div>
+    </main>
+</Layout>

@@ -14,7 +14,9 @@ export default {
             fontFamily: {
                 display: ['Manrope', 'sans-serif'],
                 serif: ['"Playfair Display"', 'serif'],
+                serif: ['"Playfair Display"', 'serif'],
                 sans: ['Manrope', 'sans-serif'],
+                handwriting: ['"Indie Flower"', '"Caveat"', 'cursive'],
             },
         },
     },

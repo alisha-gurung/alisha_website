@@ -138,7 +138,7 @@ const ValentinesInvite: React.FC = () => {
                         {!yesPressed ? (
                             <div className="space-y-8 relative z-0">
                                 <h1 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
-                                    Will you be my <span className="text-red-500">Valentine?</span>
+                                    Alisha, my baby, my fuchhi will you be my <span className="text-red-500">Valentine?</span>
                                 </h1>
 
                                 <div className="flex justify-center gap-8 h-20 items-center relative">
